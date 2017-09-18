@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DragAndDrop</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>    
+    <link href="style.css" rel="stylesheet">
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+            <div class="row Navigationmenu">
+                <div class="col-md-4">
+                    <a href="file:///home/amit/Desktop/calela/index.html" class="header">
+                        <span>Amit Kumar sharma</span>
+                    </a>
+                </div>
+                <div class="col-md-8" style="text-align:right">
+                        <div class="dropdown">
+                            <img src="prof.jpg"  onclick="myFunction()" class="profimg"/> 
+                              <div id="myDropdown" class="dropdown-content">
+                                <a href="#setting">Setting</a>
+                                <a href="#logout">Logout</a>
+                              </div>
+                        </div>
+                </div>
+            </div>
+            <div class="row row1">
+                <div class="col-md-6">
+                    <div class="textbox" id="butt1">
+                                <div class="row" style="height: 27px;">
+                                   <div id="mytextdropdown" class="col-xs-10 text-content">
+                                        <textarea  id="texta" class="textw"></textarea>
+                                    </div>
+                                    <div class="col-xs-2" style="float: right;">
+                                        <button class="AddText" onclick="myText()">+</button>
+                                    </div>
+                                </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="drag1" draggable="true" ondragover="allowDrop(event)" id="saved" value="saved" ondrop="drop(event)" ondragstart="drag(event)"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+                <div class="col-md-6">
+                        <div class="textbox" id="butt2">
+                            <div class="row" style="height:27px">
+                                <div class="col-xs-2" style="float: right;">
+                                    <button class="AddText" onclick="myText2()">+</button>
+                                </div>
+                                <div id="mytextdrpdown2" class="col-xs-10 text-content2">
+                                    <textarea id="texta2" class="textw"></textarea>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="drag2" draggable="true" ondragover="allowDrop(event)" id="saved2" value="saved2" ondrop="drop(event)" ondragstart="drag(event)"></div>
+                                </div>
+                            </div>
+                        </div>
+                </div>    
+             </div>
+             <div class="row row1">
+                    <div class="col-md-6">
+                        <div class="textbox" id="butt3">
+                                <div class="row" style="height:27px">
+                                        <div class="col-xs-2" style="float: right;">
+                                            <button class="AddText" onclick="myText3()">+</button>
+                                        </div>
+                                        <div id="mytextdrpdown3" class="col-xs-10 text-content3">
+                                            <textarea id="texta3" class="textw"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="drag3" draggable="true" ondragover="allowDrop(event)" id="saved3" value="saved3" ondrop="drop(event)" ondragstart="drag(event)"></div>
+                                        </div>
+                                    </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                            <div class="textbox" id="butt4">
+                                    <div class="row" style="height:27px">
+                                            <div class="col-xs-2" style="float: right;">
+                                                <button class="AddText" onclick="myText4()">+</button>
+                                            </div>
+                                            <div id="mytextdrpdown4" class="col-xs-10 text-content4">
+                                                <textarea id="texta4" class="textw"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="drag4" draggable="true" ondragover="allowDrop(event)" id="saved4" value="saved4" ondrop="drop(event)" ondragstart="drag(event)"></div>
+                                            </div>
+                                        </div>
+                                        
+                            </div>
+                    </div>    
+                 </div>
+            </div>
+        </div>
+  </body>
+</html>
